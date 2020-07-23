@@ -1,5 +1,5 @@
 {
-  "name": "confusion",
+  "name": "golocal",
   "version": "1.0.0",
   "description": "This is a website for Supporting and Promoting the Local Businesses!",
   "main": "index.html",
@@ -13,7 +13,7 @@
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
   },
   "author": "Trilok P Sharma",
@@ -34,5 +34,13 @@
     "font-awesome": "^4.7.0",
     "jquery": "^1.9.1",
     "popper.js": "^1.16.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trilok15/GoLocal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trilok15/GoLocal/issues"
+  },
+  "homepage": "https://github.com/trilok15/GoLocal#readme"
 }

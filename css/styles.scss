@@ -1,0 +1,10 @@
+$primary-color: #aaa;
+$primary-color-light: #bbb;
+$secondary-color: #ccc;
+$secondary-color-light: #ddd;
+$highlights: #eee;
+
+@mixin zero-margin ($pad-up-down: 0px, $pad-left-right: 0px) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
