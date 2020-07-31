@@ -1,10 +1,277 @@
-$primary-color: #aaa;
-$primary-color-light: #bbb;
-$secondary-color: #ccc;
-$secondary-color-light: #ddd;
-$highlights: #eee;
+$dark: #2d3142;
+$medium-dark: #4f5d75;
+$light: #bfc0c0;
+$orange-shade: #ef8354;
+
 
 @mixin zero-margin ($pad-up-down: 0px, $pad-left-right: 0px) {
     margin: 0px auto;
     padding: $pad-up-down $pad-left-right;
+}
+
+body {
+    background-color: $light;
+    margin-top: 60px;
+}
+
+.navbar { 
+    background-color: $dark;
+    border-bottom: 3px solid #fff;
+    
+    .navbar-brand {
+        border-radius: 20px;
+        color: #fff;
+        background-color: #fff;
+        padding: 5px 5px;
+    }
+
+    .active a {
+        color: #fff;
+    }
+
+    a {
+        color: $light;
+    }
+
+    .nav-link {
+        margin: 0px 5px;
+        position: relative;
+    }
+
+    .nav-link:after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: 2px; 
+        margin: 0 auto;
+		left: 0;
+        right: 0;
+		width: 10px;
+		background: orange;
+        transition:.5s;
+    }
+
+    .nav-link:hover:after {
+        color: #ef8354;
+        width: 100%;
+        box-shadow: 1px 1px 5px 1px $orange-shade;
+    }
+
+    ul li .active {
+        font-weight: bolder;
+    }
+}
+
+.navbar-text:hover {
+    cursor: pointer;
+}
+
+#Navbar{
+    color: #ef8354;
+}
+
+.jumbotron {
+    margin: 50px 0px 30px 0px;
+    background-color: $dark;
+    border-bottom: 2px solid white;
+    color: #fff;
+
+    hr {
+        border: 5px solid $orange-shade;
+    }
+
+    p:first-letter {
+        float: left;
+        font-size: 50px;
+        line-height: 1;
+        font-weight: bold;
+        margin: 8px 2px 2px 0px;
+        color: $orange-shade;
+    }
+
+}
+
+.search {
+    padding: 30px 10px;
+
+    h2 {
+        padding: 30px;
+    }
+    
+    .input-group {
+        border: 2px solid $orange-shade;
+        border-radius: 5px;
+        
+        button {
+            background: $dark;
+            color: #fff;
+            border-left: 2px solid $orange-shade;
+        }
+    
+        button:hover {
+            background: $orange-shade;
+            color: $dark;
+            border: 2px solid $orange-shade;
+        }
+    }
+
+    small {
+        color: $medium-dark;
+    }
+}
+
+.card {
+    border-radius: 10px;
+    padding: 25px;    
+}
+
+.carousel {
+    background-color: $dark;
+    border: 2px solid $orange-shade;
+    border-radius: 10px;
+    
+    .carousel-item {
+        height: 300px; 
+        
+        .carousel-caption {
+            padding: 5px;
+            background-color: rgba(241, 118, 65, 0.9);
+
+            h2 {
+                padding: 10px;
+                font-weight: bolder;
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 300px; 
+            max-width: 350px;
+        }
+    }
+
+    .carousel-indicators {
+        
+        li.active {
+            background: $orange-shade;
+            border: 10px solid white;
+            box-shadow: 1px 1px 5px 2px $orange-shade;
+        }
+    
+        li {
+            background: $medium-dark;
+        }
+    }    
+}
+
+
+.row-header {
+    @include zero-margin();
+    padding: 10px;
+}
+
+.row-content {
+    padding: 10px;
+    margin: 10px;
+}
+
+.social-media {
+    margin: 50px 0px;
+    padding-left: 30px;
+    display: grid;
+    align-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 60px);
+
+    a {
+        border: 1px solid white;
+        box-shadow: 1px 1px 15px 5px white;
+    }
+}
+
+.contact {
+    margin-bottom: 60px;
+
+    .contact-form {
+        color: white;
+        background-color: $dark;
+        border: 5px solid $orange-shade;
+        border-radius: 10px;
+
+        h1 {
+            padding-top: 25px;
+        }
+
+        .form {
+            padding: 20px 40px 40px 40px;
+
+            button {
+                background: $dark;
+                color: #fff;
+                border: 2px solid $orange-shade;
+                border-radius: 25px;
+                padding: 15px 25px;
+                margin-top: 10px;
+            }
+
+            button:hover {
+                background: $orange-shade;
+                color: $dark;
+            }
+        }        
+    }
+}
+
+footer {
+    background-color: $dark;
+    border-top: 2px solid #fff;
+    color: #fff;
+
+    .row {
+        margin: 10px;
+
+        .col-12 {
+            padding: 10px;
+        }
+
+        h3 {
+            padding: 15px;
+            border-bottom: 5px solid $orange-shade;
+        }
+
+        ul li {
+            padding: 5px 15px;
+        }
+
+        ul li:hover {
+            background-color: $light;
+            color: $dark;
+            font-weight: bolder;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        img {
+            margin-top: 10px;
+            padding: 25px;
+            background: white;
+            border-radius: 25px;
+        }
+    }
+
+    .row-content {
+        padding: 30px;
+    }
+
+    .copyright {
+        margin: 0;
+        padding-top: 10px;
+        max-width: 100%;
+        font-weight: bolder;
+        border-top: 2px solid #fff;
+        background-color: $orange-shade;
+        color: #fff;
+    }
 }

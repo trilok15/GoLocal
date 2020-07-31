@@ -1,0 +1,181 @@
+body {
+  background-color: #bfc0c0;
+  margin-top: 60px; }
+
+.navbar {
+  background-color: #2d3142;
+  border-bottom: 3px solid #fff; }
+  .navbar .navbar-brand {
+    border-radius: 20px;
+    color: #fff;
+    background-color: #fff;
+    padding: 5px 5px; }
+  .navbar .active a {
+    color: #fff; }
+  .navbar a {
+    color: #bfc0c0; }
+  .navbar .nav-link {
+    margin: 0px 5px;
+    position: relative; }
+  .navbar .nav-link:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 2px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 10px;
+    background: orange;
+    transition: .5s; }
+  .navbar .nav-link:hover:after {
+    color: #ef8354;
+    width: 100%;
+    box-shadow: 1px 1px 5px 1px #ef8354; }
+  .navbar ul li .active {
+    font-weight: bolder; }
+
+.navbar-text:hover {
+  cursor: pointer; }
+
+#Navbar {
+  color: #ef8354; }
+
+.jumbotron {
+  margin: 50px 0px 30px 0px;
+  background-color: #2d3142;
+  border-bottom: 2px solid white;
+  color: #fff; }
+  .jumbotron hr {
+    border: 5px solid #ef8354; }
+  .jumbotron p:first-letter {
+    float: left;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: bold;
+    margin: 8px 2px 2px 0px;
+    color: #ef8354; }
+
+.search {
+  padding: 30px 10px; }
+  .search h2 {
+    padding: 30px; }
+  .search .input-group {
+    border: 2px solid #ef8354;
+    border-radius: 5px; }
+    .search .input-group button {
+      background: #2d3142;
+      color: #fff;
+      border-left: 2px solid #ef8354; }
+    .search .input-group button:hover {
+      background: #ef8354;
+      color: #2d3142;
+      border: 2px solid #ef8354; }
+  .search small {
+    color: #4f5d75; }
+
+.card {
+  border-radius: 10px;
+  padding: 25px; }
+
+.carousel {
+  background-color: #2d3142;
+  border: 2px solid #ef8354;
+  border-radius: 10px; }
+  .carousel .carousel-item {
+    height: 300px; }
+    .carousel .carousel-item .carousel-caption {
+      padding: 5px;
+      background-color: rgba(241, 118, 65, 0.9); }
+      .carousel .carousel-item .carousel-caption h2 {
+        padding: 10px;
+        font-weight: bolder; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+      max-width: 350px; }
+  .carousel .carousel-indicators li.active {
+    background: #ef8354;
+    border: 10px solid white;
+    box-shadow: 1px 1px 5px 2px #ef8354; }
+  .carousel .carousel-indicators li {
+    background: #4f5d75; }
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+  padding: 10px; }
+
+.row-content {
+  padding: 10px;
+  margin: 10px; }
+
+.social-media {
+  margin: 50px 0px;
+  padding-left: 30px;
+  display: grid;
+  align-content: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(6, 60px); }
+  .social-media a {
+    border: 1px solid white;
+    box-shadow: 1px 1px 15px 5px white; }
+
+.contact {
+  margin-bottom: 60px; }
+  .contact .contact-form {
+    color: white;
+    background-color: #2d3142;
+    border: 5px solid #ef8354;
+    border-radius: 10px; }
+    .contact .contact-form h1 {
+      padding-top: 25px; }
+    .contact .contact-form .form {
+      padding: 20px 40px 40px 40px; }
+      .contact .contact-form .form button {
+        background: #2d3142;
+        color: #fff;
+        border: 2px solid #ef8354;
+        border-radius: 25px;
+        padding: 15px 25px;
+        margin-top: 10px; }
+      .contact .contact-form .form button:hover {
+        background: #ef8354;
+        color: #2d3142; }
+
+footer {
+  background-color: #2d3142;
+  border-top: 2px solid #fff;
+  color: #fff; }
+  footer .row {
+    margin: 10px; }
+    footer .row .col-12 {
+      padding: 10px; }
+    footer .row h3 {
+      padding: 15px;
+      border-bottom: 5px solid #ef8354; }
+    footer .row ul li {
+      padding: 5px 15px; }
+    footer .row ul li:hover {
+      background-color: #bfc0c0;
+      color: #2d3142;
+      font-weight: bolder;
+      border-radius: 10px;
+      cursor: pointer; }
+    footer .row img {
+      margin-top: 10px;
+      padding: 25px;
+      background: white;
+      border-radius: 25px; }
+  footer .row-content {
+    padding: 30px; }
+  footer .copyright {
+    margin: 0;
+    padding-top: 10px;
+    max-width: 100%;
+    font-weight: bolder;
+    border-top: 2px solid #fff;
+    background-color: #ef8354;
+    color: #fff; }
