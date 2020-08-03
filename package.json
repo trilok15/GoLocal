@@ -10,7 +10,7 @@
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
-    "clean": "rimraf dist",
+    "clean": "rimraf docs",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/fonts",
     "imagemin": "imagemin img/* -o docs/img",
     "usemin": "usemin index.html -d docs --htmlmin -o docs/index.html",
